@@ -10,7 +10,6 @@ I will do this in a blog post.
 
 
 ## Getting started
-You need to set the BREVO_API_KEY env variable.
 
-
-
+Install the package
+`npm i @cuecodes/emails`
