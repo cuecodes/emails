@@ -1,10 +1,9 @@
 
 // https://developers.brevo.com/docs/how-it-works
 import axios from "axios";
-import type { EmailTemplatesListResponse, SendEmailProps } from "./types/brevo";
+import type { EmailTemplates, EmailTemplatesListResponse, SendEmailProps } from "./types/brevo";
 
-
-export class BrevoClient {
+export class BrevoClient<T extends EmailTemplates> {
     private _apiKey: string;
     private _baseUrl: string;
 
@@ -35,7 +34,10 @@ export class BrevoClient {
         return templates.data;
     }
 
-    async sendEmail(options: SendEmailProps) {
+    async sendEmail<K extends keyof T>(options: SendEmailProps & {
+        templateId: K;
+        params: T[K]
+    }) {
         await axios.post(`${this._baseUrl}/smtp/email`, options, {
             headers: {
                 accept: 'application/json',

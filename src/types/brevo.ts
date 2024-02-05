@@ -21,7 +21,7 @@ export interface EmailTemplatesListResponse {
     }[];
 }
 
-export interface SendEmailBaseProps {
+export interface SendEmailProps {
     to: { email: string; name?: string }[];
     bcc?: { email: string; name?: string }[];
     cc?: { email: string; name?: string }[];
@@ -30,7 +30,4 @@ export interface SendEmailBaseProps {
     scheduledAt?: string; // Beta
 }
 
-export interface SendEmailProps extends SendEmailBaseProps {
-    templateId: number;
-    params?: Record<string, unknown>;
-}
+export type EmailTemplates = Record<number, Record<string, unknown>>;

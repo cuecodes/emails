@@ -2,7 +2,6 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "es5",
-    "rootDir": "./src",
     "strict": true,
     "sourceMap": true,
     "declaration": true,
@@ -21,9 +20,12 @@
     "outDir": "./dist",
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "__tests__/**/*",
+    "jest.config.ts"
   ],
   "exclude": [
     "node_modules",
+    "dist"
   ]
 }
