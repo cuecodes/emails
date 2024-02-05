@@ -1,0 +1,22 @@
+{
+  "name": "@cuecodes/emails",
+  "version": "0.0.1",
+  "description": "Typescript email library for your project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "@cuecodes",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "husky": "^9.0.7",
+    "sass": "^1.69.7",
+    "tailwindcss": "^3.4.0"
+  }
+}
