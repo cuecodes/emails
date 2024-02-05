@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
     "lint": "eslint . --ext .ts"
   },
   "author": "@cuecodes",
@@ -14,9 +15,12 @@
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
     "husky": "^9.0.7",
     "sass": "^1.69.7",
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
   }
 }
