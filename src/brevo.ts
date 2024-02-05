@@ -1,7 +1,7 @@
 
 // https://developers.brevo.com/docs/how-it-works
 import axios from "axios";
-import type { EmailTemplatesListResponse, SendEmailProps } from "../types/brevo";
+import type { EmailTemplatesListResponse, SendEmailProps } from "./types/brevo";
 
 
 export class BrevoClient {
