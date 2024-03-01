@@ -35,7 +35,7 @@ jobs:
         with:
           name: artifact
       - name: Publish to NPM
-        run: npm publish --dry-run
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: github.event_name == 'release'
