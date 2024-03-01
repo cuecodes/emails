@@ -1,5 +1,9 @@
 name: CI CD
-on: [push]
+on: 
+  push:
+  release:
+    types: [published]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +24,8 @@ jobs:
           path: |
             dist
             package.json
-            package-lock.json
+            LICENSE
+            README.md
   publish:
       runs-on: ubuntu-latest
       needs: build
@@ -33,3 +38,4 @@ jobs:
         run: npm publish --dry-run
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: github.event_name == 'release'
