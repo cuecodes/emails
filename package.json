@@ -15,7 +15,7 @@
   "author": "@cuecodes",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/cuecodes/emails"
+    "url": "git+https://github.com/cuecodes/emails.git"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
