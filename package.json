@@ -1,7 +1,7 @@
 {
   "name": "@cuecodes/emails",
   "version": "0.0.1",
-  "description": "Typescript email library for your project.",
+  "description": "Integrate email sending in your project blazing fast and without headaches.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -14,6 +14,9 @@
   },
   "author": "@cuecodes",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/cuecodes/emails"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20",
