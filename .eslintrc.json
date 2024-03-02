@@ -13,7 +13,7 @@
     "@typescript-eslint"
   ],
   "root": true,
-  "ignorePatterns": ["dist"],
+  "ignorePatterns": ["dist", "example"],
   "rules": {
   }
 }
