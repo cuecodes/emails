@@ -6,6 +6,7 @@
   "exclude": [
     "node_modules",
     "dist",
+    "example",
     "src/**/*.spec.ts",
     "src/**/*.test.ts"
   ],
